@@ -8,8 +8,8 @@ class LoginPage(BasePage):
         self.should_be_login_form()
         self.should_be_register_form()
 
-    def should_be_login_url(self, url):
-        assert self.browser.current_url == url, "Url is not {}".format(url)
+    def should_be_login_url(self):
+        assert 'login' in self.browser.current_url, "Url doesnt contain 'login'"
 
     def should_be_login_form(self):
         assert self.browser.find_element(*LoginPageLocators.LOGIN_FORM), "Can't find login form using {}".format(
