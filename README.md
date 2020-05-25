@@ -1,1 +1,1 @@
-# stepik-selenium-final-project
+# stepik-selenium-pytest-final-project
